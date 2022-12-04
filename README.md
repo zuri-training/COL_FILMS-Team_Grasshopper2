@@ -7,7 +7,7 @@
 This was created by a group of designers and developers, collaboratively working as a team to acheive a goal.
 ## Documentation
 
-[Project documentation](https://linktodocumentation)
+[Project documentation](https://docs.google.com/document/d/145kbgsx4rARj-HbCKTThbBU3ufYAEQ3K-SC6HVPdpVQ/edit?usp=share_link)
 
 
 ## User's Features
@@ -63,5 +63,5 @@ This project can be used by the following users:
 
 ## Authors
 
-- [@Team_Grasshopper2](https://drive.google.com/file/d/1qDwUHL3mVotcduKvYnLhM7KfdvPViLRH/view?usp=sharing)
+- [@Team_Grasshopper2](https://docs.google.com/document/u/0/d/1nysQ9c2N-0JxaLofn2wXT_Zjo9PXs7zLZDv3nSjXczY/edit)
 
