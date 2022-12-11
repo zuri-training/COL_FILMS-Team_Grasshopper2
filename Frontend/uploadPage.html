@@ -11,7 +11,7 @@
     <main>
       <header>
         <div>
-          <img src="./icons/toggle.svg" alt="" />
+          <img id="toggle_btn" src="./icons/toggle.svg" alt="" />
           <img src="./icons/Colfilms logo.svg" alt="" />
           <div class="search-container">
             <input type="text" id="search" placeholder="Search files..." />
@@ -20,31 +20,45 @@
           <img src="./icons/setting.svg" alt="" />
         </div>
       </header>
-      <div class="upload-container">
+      <div class="body-container">
         <div class="side-bar">
           <ul class="file_lists">
-            <li class="files"><img src="./icons/home.svg" alt="" /> Home</li>
             <li class="files">
-              <img src="./icons/category.svg" alt="" /> Categories
-            </li>
-            <li class="files active">
-              <img src="./icons/save.svg" alt="" /> Saved
+              <a href="./dashboard.html"
+                ><img src="./icons/home.svg" alt="" /> Home</a
+              >
             </li>
             <li class="files">
-              <img src="./icons/video-add.svg" alt="" />Upload
+              <a href="./categories.html"
+                ><img src="./icons/category.svg" alt="" /> Categories</a
+              >
             </li>
             <li class="files">
-              <img src="./icons/Vector.svg" alt="" />Analytics
+              <a href="./saved.html"
+                ><img src="./icons/save.svg" alt="" /> Saved</a
+              >
             </li>
             <li class="files">
-              <img src="./icons/setting.svg" alt="" />Settings
+              <a href="#"><img src="./icons/video-add.svg" alt="" /> Upload</a>
             </li>
             <li class="files">
-              <img src="./icons/message-question.svg" alt="" />Help
+              <a href="./analytics.html"
+                ><img src="./icons/Vector.svg" alt="" /> Analytics</a
+              >
+            </li>
+            <li class="files">
+              <a href="./settings.html"
+                ><img src="./icons/setting.svg" alt="" /> Settings</a
+              >
+            </li>
+            <li class="files">
+              <a href="./help.html"
+                ><img src="./icons/message-question.svg" alt="" /> Help</a
+              >
             </li>
           </ul>
         </div>
-        <div class="upload">
+        <div class="main-bar">
           <label for="file">
             <div class="upload_files">
               <img src="./images/uploadPage/image 2.png" alt="" />
@@ -71,5 +85,6 @@
         </div>
       </div>
     </main>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

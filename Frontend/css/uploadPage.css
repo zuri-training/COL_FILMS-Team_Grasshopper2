@@ -7,16 +7,20 @@ html {
 }
 
 main {
-  width: 1240px;
-  margin: 2rem auto;
-  border: 1px solid #335c67;
+  /* width: 1240px; */
+  margin: 0 auto;
+  /* border: 1px solid #335c67; */
   font-family: Open Sans;
-  padding: 2rem 2rem 3rem;
+  padding: 0.1rem 2rem 3rem;
 }
 header {
-  width: 100%;
+  position: fixed;
+  z-index: 1;
+  width: 97%;
   /* border: 1px solid blue; */
   height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
 }
 header > div {
   width: 100%;
@@ -55,30 +59,53 @@ header > div > .search-container > input {
   outline: 0;
 }
 
-.upload-container {
+.body-container {
   width: 100%;
   height: 600px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  margin-top: 95px;
+  display: flex;
+  justify-content: space-between;
+  z-index: -3;
   /* gap: 1rem; */
 }
 .side-bar {
+  position: fixed;
   margin-left: 2rem;
   background: #ffffff;
   border: 0.5px solid #540b0e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
+  width: 300px;
+  height: 600px;
+  /* z-index: -4; */
+}
+.hide {
+  /* transition: all 2.5s; */
+  /* opacity: 0; */
+  display: none;
+  /* width: 10px; */
 }
 
 .side-bar > .file_lists {
-  margin: 1rem -4rem;
+  margin-left: -4rem;
 }
 .side-bar > .file_lists > .files {
+  list-style: none;
+}
+.side-bar > .file_lists > .files:hover {
+  background: #ae4e4e;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+.side-bar > .file_lists > .files > a {
+  /* width: 100%; */
+  /* border: 2px solid orange; */
   margin: 1rem 0;
   font-size: 2rem;
   padding: 1.5rem 0;
-  list-style: none;
+
+  text-decoration: none;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -90,11 +117,24 @@ header > div > .search-container > input {
   letter-spacing: 0.04em;
   color: #111111;
 }
-.side-bar > .file_lists > .files > img {
+
+.side-bar > .file_lists > .files > a > img {
   padding-right: 2rem;
   padding-left: 1rem;
 }
+.main-bar {
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 16px;
+  margin-left: 340px;
+  display: flex;
+  flex-direction: column;
+}
 
+.increase {
+  width: 100%;
+  margin-left: 0;
+}
 .upload_files {
   display: flex;
   flex-direction: column;
@@ -103,8 +143,8 @@ header > div > .search-container > input {
   border: 1px dashed gray;
   cursor: pointer;
 
-  width: 747px;
-  height: 398px;
+  width: 95%;
+  height: 90%;
   margin: 0 auto;
   background: #ffffff;
   border: 1px dashed rgba(174, 168, 168, 0.35);
@@ -132,7 +172,7 @@ header > div > .search-container > input {
 }
 .progress {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 20px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
@@ -151,5 +191,4 @@ header > div > .search-container > input {
   background: #ae4e4e;
   opacity: 0.8;
   border-radius: 8px;
-  width: 90%;
 }
