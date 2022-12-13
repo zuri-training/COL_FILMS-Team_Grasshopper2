@@ -104,6 +104,11 @@ header .user img {
   width: 20px;
   margin-right: 0px;
 }
+.fim-icon .share{
+  width:2rem;
+  margin-bottom: -9px;
+  margin-right: -6px;
+}
 .info a{
   display: inline-flex;
   align-items: center;
@@ -247,8 +252,15 @@ header .user img {
 
 @media screen and (max-width:420px) {
   header .search {
-    width: 70%;
+    width: 40%;
   }
+  header .user img {
+    width: 20px;
+    margin-right: 2px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
 
   .grid {
     grid-template-columns: repeat(1, 1fr);
