@@ -7,30 +7,20 @@ html {
 }
 
 main {
-  /* width: 1240px; */
   margin: 0 auto;
-
-  /* border: 1px solid #335c67; */
   font-family: Open Sans;
-  padding: 0.1rem 2rem;
-
-  /* border: 1px solid red; */
+  padding: 0.1rem 0;
 }
 header {
   position: fixed;
   z-index: 1;
-  width: 97%;
-  /* display: flex;
-  justify-content: center; */
-  /* border: 1px solid blue; */
+  width: 100vw;
   height: 70px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  margin-right: 25rem;
 }
 header > div {
   width: 100%;
-  /* border: 1px solid pink; */
   height: 100%;
   padding: 1rem 1.2rem;
   display: flex;
@@ -38,19 +28,22 @@ header > div {
 header > div > img {
   padding: 0 1rem;
 }
+header > div > img:nth-of-type(5) {
+  margin-right: 2rem;
+}
+header > div > img:first-of-type:hover {
+  background: #808080;
+  opacity: 0.5;
+  border-radius: 30px;
+}
 
 header > div > .search-container {
-  /* border: 1px solid red; */
-  /* width: 350px; */
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding: 0 10px;
-
   box-sizing: border-box;
-
-  width: 423px;
-
+  width: 420px;
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 30px;
@@ -67,19 +60,14 @@ header > div > .search-container > input {
 
 .body-container {
   width: 100%;
-  /* height: 600px; */
   margin-top: 85px;
   display: flex;
-
   justify-content: space-between;
   z-index: -3;
-  /* grid-template-columns: 1fr 2fr; */
-  /* gap: 1rem; */
 }
 
 .side-bar {
   position: fixed;
-  /* margin-left: 2rem; */
   background: #ffffff;
   border: 0.5px solid #540b0e;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -87,15 +75,10 @@ header > div > .search-container > input {
   width: 300px;
   height: 570px;
   z-index: 4;
-  /* display: none; */
-  /* transition: all 2s; */
 }
 
 .side-bar > .file_lists {
   margin-left: -4rem;
-  /* margin-right: -4rem; */
-  /* width: 100%; */
-  /* justify-content: start; */
 }
 .side-bar > .file_lists > .files {
   list-style: none;
@@ -107,19 +90,14 @@ header > div > .search-container > input {
 }
 
 .side-bar > .file_lists > .files > a {
-  /* width: 100%; */
-  /* border: 2px solid orange; */
   margin: 1rem 0;
   font-size: 2rem;
   padding: 1.5rem 0;
-
   text-decoration: none;
-
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
@@ -131,7 +109,6 @@ header > div > .search-container > input {
   padding-left: 1rem;
 }
 .main-bar {
-  /* width: 77%; */
   border: 1px solid black;
   border-radius: 16px;
   display: flex;
@@ -139,10 +116,13 @@ header > div > .search-container > input {
   align-items: center;
   justify-content: space-evenly;
   margin-left: auto;
-
-  /* transform: translateY(-100px); */
-  /* z-index: -1; */
-  /* overflow: hidden; */
+}
+.main-bar > h1 {
+  font-size: 3rem;
+  width: 100%;
+  margin: 20px 0 17px 25px;
+  color: black;
+  font-weight: 500;
 }
 
 .video {
@@ -152,15 +132,7 @@ header > div > .search-container > input {
   border-radius: 10px;
 }
 
-/* .player {
-  width: 320px;
-  height: 220px;
-  border: 1px solid black;
-  border-radius: 10px;
-} */
 .player {
-  /* width: 320px; */
-  /* height: 220px; */
   border-radius: 10px;
   max-width: 750px;
   border: 5px solid rgba(0, 0, 0, 0.2);
@@ -183,7 +155,6 @@ header > div > .search-container > input {
 
 .player__video {
   width: 100%;
-  /* height: 220px; */
 }
 
 .player__button {
@@ -193,13 +164,8 @@ header > div > .search-container > input {
   color: white;
   text-align: center;
   outline: 0;
-  /* padding: 0; */
   cursor: pointer;
   max-width: 50px;
-
-  /* background: none;
-  border: none;
-  color: white; */
   font-size: 1.3rem;
 }
 
@@ -252,7 +218,7 @@ header > div > .search-container > input {
   flex-basis: 10%;
 }
 
-/* unholy css to style input type="range" */
+/* css to style input type="range" */
 
 input[type="range"] {
   -webkit-appearance: none;
@@ -309,13 +275,6 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* .full_screen {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 17px;
-} */
-
 .player > img {
   width: 270px;
   height: 220px;
@@ -327,8 +286,6 @@ input[type="range"]::-moz-range-thumb {
   font-size: 1.8rem;
   margin: 1rem 0;
   font-weight: 700;
-  /* font-weight: 400; */
-  /* padding: 2rem 1rem 2rem 1rem; */
 }
 .video_title > .user_profile {
   margin-left: 1rem;
@@ -342,60 +299,43 @@ input[type="range"]::-moz-range-thumb {
   margin-top: 10px;
   font-size: 1.4rem;
 }
-/* .active {
-  background: #ae4e4e;
-  opacity: 0.8;
-  border-radius: 8px;
-} */
 
-@media only screen and (max-width: 500px) {
-  .side-bar {
-    /* width: 85%; */
-    /* font-size: 1.1rem; */
-    z-index: 4;
-    /* grid-row: 300ox; */
+@media only screen and (max-width: 700px) {
+  .header-logo {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
   }
-
   header > div > .search-container {
-    display: none;
+    margin: 3px auto;
+    width: 300px;
   }
-
-  header > div > img:nth-of-type(4) {
+}
+@media only screen and (max-width: 600px) {
+  header > div > .search-container {
     display: none;
   }
   header > div > img:nth-of-type(3) {
-    display: none;
-  }
-
-  .main-bar {
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 700px; */
-    width: 100%;
-    /* grid-row: 300px; */
+    margin-left: 4rem;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
+  .header-logo {
+    padding: 1rem 0.8rem;
+  }
+  header > div > img:nth-of-type(3) {
+    margin-left: 0;
+  }
   .side-bar {
-    /* width: 85%; */
-    /* font-size: 1.1rem; */
-    z-index: 4;
-    /* grid-row: 300ox; */
+    height: 550px;
   }
-
-  header > div > .search-container {
-    display: none;
+  .main-bar > h1 {
+    font-size: 2rem;
   }
-
-  header > div > img:nth-of-type(5) {
-    display: none;
+  .video_title > .user_title > h3 {
+    font-size: 1.6rem;
   }
-
-  .main-bar {
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-top: 700px; */
-    width: 100%;
-    /* grid-row: 300px; */
+  .video_title > .user_title > p {
+    margin-top: 7px;
+    font-size: 1.3rem;
   }
 }

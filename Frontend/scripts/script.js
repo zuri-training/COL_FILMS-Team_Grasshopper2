@@ -5,7 +5,6 @@ const mainBar = document.querySelector(".main-bar");
 const openAndCloseSideBar = function () {
   if (sideBar.style.display === "none") {
     sideBar.style.display = "block";
-    // mainBar.style.width = "75%";
     mainBar.style.marginLeft = "auto";
   } else {
     sideBar.style.display = "none";
