@@ -4,17 +4,21 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: #842324;
 }
 
 main > div {
   margin: 60px auto;
   width: 400px;
-  border: 1px solid lightseagreen;
+  border: 1px solid #ead5d5;
+  background-color: #ead5d5;
 }
 h1,
 p {
   text-align: center;
   font-family: Open sans;
+  background-color: #ead5d5;
+  color: brown;
 }
 .verify {
   box-sizing: border-box;
@@ -26,12 +30,15 @@ p {
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(2, 124, 108);
-  color: azure;
+  background-color: #ce9495;
+  color: #ce9495;
+}
+.verify > img {
+  background-color: #ce9495;
 }
 a {
   font-size: 1.3rem;
-  color: azure;
+  color: white;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -41,7 +48,7 @@ a {
 p {
   display: block;
 
-  background-color: rgb(2, 124, 108);
+  background-color: brown;
   width: 300px;
   margin: 2rem auto;
 }

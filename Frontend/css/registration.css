@@ -1,6 +1,7 @@
 html,
 body {
   box-sizing: border-box;
+  background: #842324;
 }
 form {
   margin: 50px auto;
@@ -24,8 +25,8 @@ fieldset {
   padding-left: 2rem;
   line-height: 1.7rem;
   border-radius: 1%;
-  background-color: rgb(2, 124, 108);
-  color: azure;
+  background-color: #ead5d5;
+  color: #842324;
 }
 label {
   font-size: 25px;
@@ -41,7 +42,10 @@ label {
   border-radius: 5px;
 }
 #togglePassword {
-  display: none;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -38px;
+  color: black;
 }
 .submit {
   display: block;
@@ -49,10 +53,10 @@ label {
   width: 70%;
   padding: 10px;
   font-size: 20px;
-  background-color: green;
+  background-color: #842324;
   border: none;
   border-radius: 10px;
-  color: azure;
+  color: #ead5d5;
 }
 .mid {
   width: 50%;
@@ -60,9 +64,10 @@ label {
 }
 p {
   font-size: 20px;
+  color: black;
 }
 a {
-  color: wheat;
+  color: #842324;
 }
 @media only screen and (max-width: 400px) {
   form {
